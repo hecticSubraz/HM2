@@ -1,0 +1,212 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+// TornadoVM SDK path configuration
+// Use TORNADO_SDK environment variable or fallback to detected/common installation paths
+ext.tornadoSdkPath = System.getenv('TORNADO_SDK') ?: (System.getProperty('os.name').toLowerCase().contains('windows') 
+    ? 'C:/Users/Lenovo/TornadoVM/bin/sdk' 
+    : '/opt/TornadoVM/bin/sdk')
+
+javafx {
+    version = '21.0.1'
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.graphics']
+}
+
+dependencies {
+    // JavaFX
+    implementation libs.bundles.javafx
+    
+    // Logging
+    implementation libs.bundles.logging
+    
+    // Configuration
+    implementation libs.typesafe.config
+    
+    // Utilities
+    implementation libs.guava
+    implementation libs.commons.codec
+    implementation libs.commons.io
+    
+    // TornadoVM from SDK installation
+    // Using files() method to explicitly add each JAR file
+    def tornadoJarDir = file("${tornadoSdkPath}/share/java/tornado")
+    if (tornadoJarDir.exists()) {
+        tornadoJarDir.listFiles().findAll { it.name.endsWith('.jar') }.each {
+            implementation files(it.absolutePath)
+        }
+    }
+    
+    // Testing
+    testImplementation libs.bundles.testing
+    testImplementation libs.bundles.property.testing
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+application {
+    mainClass = 'com.datacomp.ui.DataCompApp'
+    applicationDefaultJvmArgs = [
+        '-Xms512m',
+        '-Xmx8g',  // Increased for large file support (up to 30GB)
+        '-XX:+UseG1GC',  // G1GC for better large heap management
+        '-XX:MaxGCPauseMillis=200',  // Target max GC pause
+        '-XX:+ParallelRefProcEnabled',  // Parallel reference processing
+        '-XX:InitiatingHeapOccupancyPercent=45',  // Earlier GC trigger
+        '-XX:G1HeapRegionSize=16m',  // Larger regions for large heap
+        '-Dtornado.load.runtime.implementation=uk.ac.manchester.tornado.runtime.TornadoCoreRuntime',
+        '--add-modules=jdk.incubator.vector'
+    ]
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+    
+    maxHeapSize = '2g'
+    
+    systemProperty 'tornado.unittests.device', System.getProperty('tornado.unittests.device', 'ignore')
+    
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat "full"
+        showStandardStreams = false
+    }
+}
+
+tasks.register('testGpu', Test) {
+    useJUnitPlatform {
+        includeTags 'gpu'
+    }
+    systemProperty 'tornado.unittests.device', 'opencl:0:0'
+}
+
+tasks.register('generateLargeTestFile', JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.datacomp.util.TestDataGenerator'
+    args = ['1024'] // 1GB default
+}
+
+run {
+    standardInput = System.in
+}
+
+tasks.register('runTornado', JavaExec) {
+    dependsOn 'assemble'
+    
+    mainClass = 'com.datacomp.ui.DataCompApp'
+    
+    // Set TornadoVM environment variables
+    environment 'TORNADO_SDK', tornadoSdkPath
+    environment 'PATH', "${tornadoSdkPath}/../lib${File.pathSeparator}${System.getenv('PATH')}"
+    
+    // Set classpath to include all runtime dependencies (Gradle handles path separators correctly)
+    classpath = sourceSets.main.runtimeClasspath + files("${sourceSets.main.output.classesDirs}") + files("${sourceSets.main.output.resourcesDir}")
+    
+    // JavaFX module path - collect all JavaFX JARs
+    def javaFxJars = sourceSets.main.runtimeClasspath.filter { 
+        it.name.contains('javafx')
+    }.collect { it.absolutePath }
+    
+    // Build combined module path (TornadoVM + JavaFX)
+    def combinedModulePath = "${tornadoSdkPath}/share/java/tornado${File.pathSeparator}${javaFxJars.join(File.pathSeparator)}"
+    
+    // JVM arguments for TornadoVM and JavaFX
+    // Use TornadoVM's generated argfile for all module exports
+    def tornadoArgfile = 'C:/Users/Lenovo/TornadoVM/tornado-argfile'
+    jvmArgs = [
+        "@${tornadoArgfile}",  // Load all TornadoVM module exports from argfile
+        '--add-modules=javafx.controls,javafx.fxml,javafx.graphics',
+        "--module-path=${combinedModulePath}",  // Override argfile module-path with combined path
+        '-Xms512m',
+        '-Xmx4g'
+    ]
+    
+    standardOutput = System.out
+    errorOutput = System.err
+}
+
+compileJava {
+    options.compilerArgs += [
+        '--add-modules', 'jdk.incubator.vector',
+        '-Xlint:unchecked'
+    ]
+}
+
+// CLI tasks for compression/decompression
+tasks.register('compress', JavaExec) {
+    group = 'application'
+    description = 'Compress a file (usage: -Pinput=<file> -Poutput=<file> [-Pchunk=<size-MB>])'
+    
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.datacomp.cli.DataCompCLI'
+    
+    def inputFile = project.findProperty('input') ?: ''
+    def outputFile = project.findProperty('output') ?: ''
+    def chunkSize = project.findProperty('chunk') ?: '512'
+    
+    if (inputFile && outputFile) {
+        args = ['compress', inputFile, outputFile, chunkSize]
+    } else {
+        args = ['compress', '', ''] // Will show usage
+    }
+}
+
+tasks.register('decompress', JavaExec) {
+    group = 'application'
+    description = 'Decompress a file (usage: -Pinput=<file> -Poutput=<file>)'
+    
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.datacomp.cli.DataCompCLI'
+    
+    def inputFile = project.findProperty('input') ?: ''
+    def outputFile = project.findProperty('output') ?: ''
+    
+    if (inputFile && outputFile) {
+        args = ['decompress', inputFile, outputFile]
+    } else {
+        args = ['decompress', '', ''] // Will show usage
+    }
+}
+
+tasks.register('cli', JavaExec) {
+    group = 'application'
+    description = 'Run CLI with custom args (usage: -Pargs="compress input.txt output.dc")'
+    
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.datacomp.cli.DataCompCLI'
+    
+    def cliArgs = project.findProperty('args') ?: ''
+    if (cliArgs) {
+        args = cliArgs.split('\\s+')
+    }
+}
+
+tasks.register('debugTornadoDeps') {
+    group = 'help'
+    description = 'Debug TornadoVM dependencies configuration'
+    
+    doLast {
+        def tornadoDir = "${tornadoSdkPath}/share/java/tornado"
+        
+        println "TornadoVM SDK Path: ${tornadoSdkPath}"
+        println "TornadoVM Jar Directory: ${tornadoDir}"
+        println "Directory exists: ${file(tornadoDir).exists()}"
+        
+        if (file(tornadoDir).exists()) {
+            println "\nJAR files found:"
+            fileTree(dir: tornadoDir, include: ['*.jar']).each { f ->
+                println "  - ${f.name}"
+            }
+        }
+    }
+}

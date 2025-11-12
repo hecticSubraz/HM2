@@ -1,0 +1,828 @@
+2025-11-13 00:00:04.607 [JavaFX Application Thread] INFO  com.datacomp.ui.DataCompApp - Application stopping
+2025-11-13 00:00:04.632 [JavaFX Application Thread] INFO  com.datacomp.ui.DataCompApp - Service cache shutdown complete
+2025-11-13 00:00:44.687 [JavaFX-Launcher] INFO  com.datacomp.ui.DataCompApp - Initializing DataComp application
+2025-11-13 00:00:44.910 [JavaFX Application Thread] INFO  com.datacomp.ui.MainViewController - Initializing main view controller
+2025-11-13 00:00:45.096 [JavaFX Application Thread] INFO  com.datacomp.ui.DataCompApp - Application started successfully
+2025-11-13 00:00:50.575 [JavaFX Application Thread] INFO  com.datacomp.ui.CompressController - CPU mode enabled by default for UI stability
+2025-11-13 00:01:05.029 [ServiceCache-Init] INFO  com.datacomp.service.ServiceCache - Starting GPU service initialization (this may take 5-10 seconds)...
+2025-11-13 00:01:05.085 [ServiceCache-Init] INFO  com.datacomp.service.gpu.GpuFrequencyService - Selected GPU device: NVIDIA GeForce RTX 3050 Ti Laptop GPU CL_DEVICE_TYPE_GPU (available)
+2025-11-13 00:01:05.735 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ╔═══════════════════════════════════════════════════════════╗
+2025-11-13 00:01:05.736 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║  STREAMING GPU COMPRESSION SERVICE INITIALIZED            ║
+2025-11-13 00:01:05.736 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ╠═══════════════════════════════════════════════════════════╣
+2025-11-13 00:01:05.736 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║  Mode: TRUE STREAMING (Constant Memory Usage)             ║
+2025-11-13 00:01:05.736 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║  Chunk Size: {:<48} ║
+2025-11-13 00:01:05.736 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║  Max Memory: ~576.00 MB                                     ║
+2025-11-13 00:01:05.736 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ╚═══════════════════════════════════════════════════════════╝
+2025-11-13 00:01:05.769 [ServiceCache-Init] INFO  com.datacomp.service.ServiceCache - ✓ GPU service initialized successfully in 739ms
+2025-11-13 00:01:05.769 [pool-2-thread-1] INFO  com.datacomp.ui.CompressController - Service initialized successfully: Streaming GPU Compression (Constant Memory)
+2025-11-13 00:01:05.793 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - 
+2025-11-13 00:01:05.793 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - ┌────────────────────────────────────────────────────────────┐
+2025-11-13 00:01:05.793 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - │  STREAMING GPU COMPRESSION                                  │
+2025-11-13 00:01:05.793 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - ├────────────────────────────────────────────────────────────┤
+2025-11-13 00:01:05.794 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - │  File: {:<51} │
+2025-11-13 00:01:05.794 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - │  Size: {:<51} │
+2025-11-13 00:01:05.794 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - │  Chunks: {:<48} │
+2025-11-13 00:01:05.794 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - │  Memory: Constant ~576.00 MB                              │
+2025-11-13 00:01:05.794 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - └────────────────────────────────────────────────────────────┘
+2025-11-13 00:01:05.794 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - 
+2025-11-13 00:01:06.401 [pool-2-thread-1] INFO  com.datacomp.util.GpuBufferManager - GPU Buffer Manager initialized
+2025-11-13 00:01:06.758 [pool-2-thread-1] WARN  c.d.service.gpu.StreamingGpuCompressionService - GPU compression failed for chunk, using CPU: Index 64 out of bounds for length 64
+2025-11-13 00:01:16.170 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - Chunk 1/5: 536870912 bytes → 480461916 bytes ({:.2f}%) | {:.1f}% complete | 89.49300646781921ms
+2025-11-13 00:02:30.472 [JavaFX Application Thread] INFO  com.datacomp.ui.DataCompApp - Application stopping
+2025-11-13 00:02:30.472 [JavaFX Application Thread] INFO  com.datacomp.ui.DataCompApp - Service cache shutdown complete
+2025-11-13 00:02:41.796 [JavaFX-Launcher] INFO  com.datacomp.ui.DataCompApp - Initializing DataComp application
+2025-11-13 00:02:42.020 [JavaFX Application Thread] INFO  com.datacomp.ui.MainViewController - Initializing main view controller
+2025-11-13 00:02:42.207 [JavaFX Application Thread] INFO  com.datacomp.ui.DataCompApp - Application started successfully
+2025-11-13 00:02:46.569 [JavaFX Application Thread] INFO  com.datacomp.ui.CompressController - CPU mode enabled by default for UI stability
+2025-11-13 00:03:04.256 [pool-2-thread-1] INFO  com.datacomp.service.ServiceCache - CPU service cached
+2025-11-13 00:03:04.259 [pool-2-thread-1] INFO  com.datacomp.ui.CompressController - Service initialized successfully: CPU Compression
+2025-11-13 00:03:04.263 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing videoplayback.webm (3681388278 bytes, {:.2f} GB) into 3.428560009226203 chunks
+2025-11-13 00:03:04.267 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:03:14.128 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:03:23.696 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 2/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:03:29.727 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 3/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:03:35.735 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 4/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:03:41.569 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 5/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:03:47.369 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 6/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:03:52.535 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 7/7 compressed: 460162806 -> 460162806 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:03:52.536 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:03:52.536 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 3681388278 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:03:52.536 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:03:52.539 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (7 chunks metadata)
+2025-11-13 00:03:52.606 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:52.662 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:52.732 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:52.781 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:52.856 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:52.962 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:53.064 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:53.182 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:53.291 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:53.408 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:53.513 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:53.625 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:53.733 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:53.838 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:53.960 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:03:53.971 [pool-2-thread-1] ERROR com.datacomp.service.cpu.CpuCompressionService - Compression failed for file: D:\videoplayback.webm
+java.io.IOException: There is not enough space on the disk
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:75)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:300)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+	at java.base/java.io.BufferedOutputStream.implWrite(BufferedOutputStream.java:222)
+	at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:200)
+	at java.base/java.io.DataOutputStream.write(DataOutputStream.java:115)
+	at com.datacomp.service.cpu.CpuCompressionService.compressWithStages(CpuCompressionService.java:272)
+	at com.datacomp.ui.CompressController$2.call(CompressController.java:358)
+	at com.datacomp.ui.CompressController$2.call(CompressController.java:291)
+	at javafx.graphics@21.0.1/javafx.concurrent.Task$TaskCallable.call(Task.java:1399)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: java.io.IOException: There is not enough space on the disk
+		at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+		at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:75)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+		at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:300)
+		at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+		at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+		at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+		at java.base/java.io.BufferedOutputStream.implFlush(BufferedOutputStream.java:252)
+		at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:240)
+		at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:184)
+		at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:193)
+		at com.datacomp.service.cpu.CpuCompressionService.compressWithStages(CpuCompressionService.java:240)
+		... 9 common frames omitted
+		Suppressed: java.io.IOException: There is not enough space on the disk
+			at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+			at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:75)
+			at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+			at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+			at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+			at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:300)
+			at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+			at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+			at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+			at java.base/java.io.BufferedOutputStream.implFlush(BufferedOutputStream.java:252)
+			at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:240)
+			at java.base/java.io.DataOutputStream.flush(DataOutputStream.java:131)
+			at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:184)
+			... 10 common frames omitted
+2025-11-13 00:03:53.975 [pool-2-thread-1] ERROR com.datacomp.service.cpu.CpuCompressionService - File size: 3681388278 bytes ({:.2f} GB), Chunks: 3.428560009226203
+2025-11-13 00:03:53.975 [pool-2-thread-1] ERROR com.datacomp.service.cpu.CpuCompressionService - Temp file exists: true, Output exists: true
+2025-11-13 00:03:54.084 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Deleted incomplete output file (1581256698 bytes)
+2025-11-13 00:03:54.247 [JavaFX Application Thread] ERROR com.datacomp.ui.CompressController - Compression failed
+java.io.IOException: Compression failed: There is not enough space on the disk
+	at com.datacomp.service.cpu.CpuCompressionService.compressWithStages(CpuCompressionService.java:342)
+	at com.datacomp.ui.CompressController$2.call(CompressController.java:358)
+	at com.datacomp.ui.CompressController$2.call(CompressController.java:291)
+	at javafx.graphics@21.0.1/javafx.concurrent.Task$TaskCallable.call(Task.java:1399)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: There is not enough space on the disk
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:75)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:300)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+	at java.base/java.io.BufferedOutputStream.implWrite(BufferedOutputStream.java:222)
+	at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:200)
+	at java.base/java.io.DataOutputStream.write(DataOutputStream.java:115)
+	at com.datacomp.service.cpu.CpuCompressionService.compressWithStages(CpuCompressionService.java:272)
+	... 9 common frames omitted
+	Suppressed: java.io.IOException: There is not enough space on the disk
+		at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+		at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:75)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+		at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:300)
+		at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+		at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+		at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+		at java.base/java.io.BufferedOutputStream.implFlush(BufferedOutputStream.java:252)
+		at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:240)
+		at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:184)
+		at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:193)
+		at com.datacomp.service.cpu.CpuCompressionService.compressWithStages(CpuCompressionService.java:240)
+		... 9 common frames omitted
+		Suppressed: java.io.IOException: There is not enough space on the disk
+			at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+			at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:75)
+			at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+			at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+			at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+			at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:300)
+			at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+			at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+			at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+			at java.base/java.io.BufferedOutputStream.implFlush(BufferedOutputStream.java:252)
+			at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:240)
+			at java.base/java.io.DataOutputStream.flush(DataOutputStream.java:131)
+			at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:184)
+			... 10 common frames omitted
+2025-11-13 00:04:20.577 [JavaFX Application Thread] ERROR com.datacomp.ui.CompressController - Compression failed
+java.nio.file.NoSuchFileException: D:\videoplayback.webm
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:197)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1853)
+	at java.base/java.nio.file.Files.size(Files.java:2462)
+	at com.datacomp.ui.CompressController$2.call(CompressController.java:295)
+	at com.datacomp.ui.CompressController$2.call(CompressController.java:291)
+	at javafx.graphics@21.0.1/javafx.concurrent.Task$TaskCallable.call(Task.java:1399)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-13 00:04:42.935 [pool-2-thread-1] INFO  com.datacomp.ui.CompressController - Service initialized successfully: CPU Compression
+2025-11-13 00:04:42.935 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing videoplayback.webm (3681388278 bytes, {:.2f} GB) into 3.428560009226203 chunks
+2025-11-13 00:04:42.935 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:04:48.791 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:04:54.720 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 2/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:05:00.518 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 3/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:05:06.550 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 4/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:05:12.448 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 5/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:05:18.265 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 6/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:05:23.170 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 7/7 compressed: 460162806 -> 460162806 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:05:23.171 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:05:23.171 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 3681388278 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:05:23.171 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:05:23.172 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (7 chunks metadata)
+2025-11-13 00:05:23.240 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:23.321 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:23.417 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:23.512 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:23.625 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:23.738 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:23.845 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:23.954 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:24.065 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:24.173 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:24.283 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:24.398 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:24.516 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:24.628 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:24.757 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:24.869 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:24.971 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:25.083 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:25.201 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:25.302 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:25.411 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:25.525 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:25.641 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:25.761 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:25.872 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:25.987 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:26.099 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:26.209 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:26.308 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:26.416 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:26.520 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:26.630 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:26.756 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:26.941 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:27.130 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:05:27.139 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 3681388278 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:05:27.241 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 3681388278 -> 3681392368 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:05:27.241 [pool-2-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:05:45.020 [JavaFX Application Thread] INFO  com.datacomp.ui.CompressController - CPU mode enabled by default for UI stability
+2025-11-13 00:05:58.849 [pool-3-thread-1] INFO  com.datacomp.ui.CompressController - Service initialized successfully: CPU Compression
+2025-11-13 00:05:58.850 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing videoplayback.webm.dcz to videoplayback.webm
+2025-11-13 00:05:58.850 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Input file size: 3681392368 bytes ({:.2f} GB)
+2025-11-13 00:05:58.850 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Reading compression header...
+2025-11-13 00:05:58.853 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing 7 chunks, original size: 3681388278 bytes ({:.2f} GB)
+2025-11-13 00:05:58.853 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 1/7: offset=0, compressedSize=536870912, originalSize=536870912 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:06:22.207 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/7 decompressed: 536870912 bytes (23354ms, checksum OK)
+2025-11-13 00:06:22.207 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Progress: {:.2f} GB / {:.2f} GB ({:.1f}%) decompressed
+2025-11-13 00:06:22.207 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 2/7: offset=536870912, compressedSize=536870912, originalSize=536870912 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:06:44.907 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 2/7 decompressed: 536870912 bytes (22700ms, checksum OK)
+2025-11-13 00:06:44.907 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Progress: {:.2f} GB / {:.2f} GB ({:.1f}%) decompressed
+2025-11-13 00:06:44.907 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 3/7: offset=1073741824, compressedSize=536870912, originalSize=536870912 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:07:07.407 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 3/7 decompressed: 536870912 bytes (22500ms, checksum OK)
+2025-11-13 00:07:07.408 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Progress: {:.2f} GB / {:.2f} GB ({:.1f}%) decompressed
+2025-11-13 00:07:07.408 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 4/7: offset=1610612736, compressedSize=536870912, originalSize=536870912 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:07:30.260 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 4/7 decompressed: 536870912 bytes (22852ms, checksum OK)
+2025-11-13 00:07:30.260 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Progress: {:.2f} GB / {:.2f} GB ({:.1f}%) decompressed
+2025-11-13 00:07:30.260 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 5/7: offset=2147483648, compressedSize=536870912, originalSize=536870912 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:07:52.819 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 5/7 decompressed: 536870912 bytes (22559ms, checksum OK)
+2025-11-13 00:07:52.819 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Progress: {:.2f} GB / {:.2f} GB ({:.1f}%) decompressed
+2025-11-13 00:07:52.819 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 6/7: offset=2684354560, compressedSize=536870912, originalSize=536870912 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:08:16.734 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 6/7 decompressed: 536870912 bytes (23915ms, checksum OK)
+2025-11-13 00:08:16.734 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Progress: {:.2f} GB / {:.2f} GB ({:.1f}%) decompressed
+2025-11-13 00:08:16.734 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 7/7: offset=3221225472, compressedSize=460162806, originalSize=460162806 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:08:37.473 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 7/7 decompressed: 460162806 bytes (20739ms, checksum OK)
+2025-11-13 00:08:37.473 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Progress: {:.2f} GB / {:.2f} GB ({:.1f}%) decompressed
+2025-11-13 00:08:37.481 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - All data synchronized to disk
+2025-11-13 00:08:37.590 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompression complete: 3681388278 bytes ({:.2f} GB) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:08:37.590 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - File integrity verified - decompressed 3681388278 bytes successfully
+2025-11-13 00:08:37.590 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Checksum validation passed for all 7 chunks
+2025-11-13 00:09:02.393 [JavaFX Application Thread] INFO  com.datacomp.ui.CompressController - CPU mode enabled by default for UI stability
+2025-11-13 00:09:06.605 [JavaFX Application Thread] INFO  com.datacomp.ui.DataCompApp - Application stopping
+2025-11-13 00:09:06.605 [JavaFX Application Thread] INFO  com.datacomp.ui.DataCompApp - Service cache shutdown complete
+2025-11-13 00:12:18.727 [Test worker] INFO  com.datacomp.util.TestDataGenerator - Generating 1MB random test file: C:\Users\Lenovo\AppData\Local\Temp\junit999475069846581265\test.bin
+2025-11-13 00:12:18.738 [Test worker] INFO  com.datacomp.util.TestDataGenerator - Test file generated: 1048576 bytes
+2025-11-13 00:12:18.740 [Test worker] INFO  com.datacomp.benchmark.BenchmarkSuite - Starting benchmark suite on file: C:\Users\Lenovo\AppData\Local\Temp\junit999475069846581265\test.bin
+2025-11-13 00:12:18.742 [Test worker] INFO  com.datacomp.benchmark.BenchmarkSuite - Benchmarking CPU: CPU Compression
+2025-11-13 00:12:18.744 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing test.bin (1048576 bytes, {:.2f} GB) into 9.765625E-4 chunks
+2025-11-13 00:12:18.748 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:12:18.923 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/1 compressed: 1048576 -> 1048576 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:18.923 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:12:18.924 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 1048576 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:12:18.924 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:12:18.925 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (1 chunks metadata)
+2025-11-13 00:12:18.939 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 1048576 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:12:19.055 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 1048576 -> 1049224 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:19.055 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:12:19.057 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing test.bin (1048576 bytes, {:.2f} GB) into 9.765625E-4 chunks
+2025-11-13 00:12:19.057 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:12:19.176 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/1 compressed: 1048576 -> 1048576 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:19.176 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:12:19.176 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 1048576 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:12:19.177 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:12:19.178 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (1 chunks metadata)
+2025-11-13 00:12:19.191 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 1048576 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:12:19.302 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 1048576 -> 1049224 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:19.302 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:12:19.303 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing test.bin (1048576 bytes, {:.2f} GB) into 9.765625E-4 chunks
+2025-11-13 00:12:19.303 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:12:19.419 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/1 compressed: 1048576 -> 1048576 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:19.420 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:12:19.420 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 1048576 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:12:19.420 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:12:19.421 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (1 chunks metadata)
+2025-11-13 00:12:19.432 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 1048576 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:12:19.538 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 1048576 -> 1049224 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:19.538 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:12:19.540 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing test.bin (1048576 bytes, {:.2f} GB) into 9.765625E-4 chunks
+2025-11-13 00:12:19.540 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:12:19.619 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/1 compressed: 1048576 -> 1048576 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:19.619 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:12:19.620 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 1048576 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:12:19.620 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:12:19.621 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (1 chunks metadata)
+2025-11-13 00:12:19.633 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 1048576 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:12:19.739 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 1048576 -> 1049224 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:19.739 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:12:19.740 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing test.bin (1048576 bytes, {:.2f} GB) into 9.765625E-4 chunks
+2025-11-13 00:12:19.741 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:12:19.786 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/1 compressed: 1048576 -> 1048576 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:19.787 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:12:19.788 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 1048576 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:12:19.788 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:12:19.789 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (1 chunks metadata)
+2025-11-13 00:12:19.801 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 1048576 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:12:19.910 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 1048576 -> 1049224 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:19.910 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:12:19.910 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing test.bin (1048576 bytes, {:.2f} GB) into 9.765625E-4 chunks
+2025-11-13 00:12:19.911 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:12:19.952 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/1 compressed: 1048576 -> 1048576 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:19.952 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:12:19.952 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 1048576 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:12:19.953 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:12:19.953 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (1 chunks metadata)
+2025-11-13 00:12:19.965 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 1048576 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:12:20.080 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 1048576 -> 1049224 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:20.080 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:12:20.082 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing test.bin (1048576 bytes, {:.2f} GB) into 9.765625E-4 chunks
+2025-11-13 00:12:20.082 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:12:20.135 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/1 compressed: 1048576 -> 1048576 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:20.135 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:12:20.135 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 1048576 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:12:20.135 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:12:20.137 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (1 chunks metadata)
+2025-11-13 00:12:20.148 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 1048576 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:12:20.251 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 1048576 -> 1049224 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:20.251 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:12:20.252 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing test.bin (1048576 bytes, {:.2f} GB) into 9.765625E-4 chunks
+2025-11-13 00:12:20.252 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:12:20.312 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/1 compressed: 1048576 -> 1048576 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:20.313 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:12:20.313 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 1048576 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:12:20.313 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:12:20.315 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (1 chunks metadata)
+2025-11-13 00:12:20.328 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 1048576 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:12:20.439 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 1048576 -> 1049224 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:20.439 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:12:20.443 [Test worker] INFO  com.datacomp.benchmark.BenchmarkSuite - Benchmark complete: CPU [CPU Compression]: 5.83 MB/s, 100.06% compression, 0.180s total
+2025-11-13 00:12:20.450 [Test worker] WARN  com.datacomp.service.gpu.GpuFrequencyService - Failed to initialize TornadoVM device: null
+2025-11-13 00:12:20.452 [Test worker] WARN  com.datacomp.service.gpu.GpuCompressionService - GPU not available, will use CPU fallback
+2025-11-13 00:12:20.452 [Test worker] INFO  com.datacomp.benchmark.BenchmarkSuite - GPU not available, skipping GPU benchmark
+2025-11-13 00:12:20.493 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing random.bin (10240 bytes, {:.2f} GB) into 9.5367431640625E-6 chunks
+2025-11-13 00:12:20.494 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:12:20.506 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/1 compressed: 10240 -> 10239 bytes (ratio: {:.2f}%, 99.990234375ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:20.507 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:12:20.507 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 10239 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:12:20.507 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:12:20.508 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (1 chunks metadata)
+2025-11-13 00:12:20.520 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 10239 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:12:20.625 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 10240 -> 10889 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:20.625 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:12:20.626 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing random.dcz to random.decompressed.bin
+2025-11-13 00:12:20.627 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Input file size: 10889 bytes ({:.2f} GB)
+2025-11-13 00:12:20.639 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Reading compression header...
+2025-11-13 00:12:20.639 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing 1 chunks, original size: 10240 bytes ({:.2f} GB)
+2025-11-13 00:12:20.639 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 1/1: offset=0, compressedSize=10239, originalSize=10240 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:20.645 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/1 decompressed: 10240 bytes (6ms, checksum OK)
+2025-11-13 00:12:20.648 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - All data synchronized to disk
+2025-11-13 00:12:20.749 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompression complete: 10240 bytes ({:.2f} GB) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:20.749 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - File integrity verified - decompressed 10240 bytes successfully
+2025-11-13 00:12:20.749 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Checksum validation passed for all 1 chunks
+2025-11-13 00:12:20.769 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing test.txt (1300 bytes, {:.2f} GB) into 1.210719347000122E-6 chunks
+2025-11-13 00:12:20.770 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:12:20.783 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/1 compressed: 1300 -> 500 bytes (ratio: {:.2f}%, 38.46153846153847ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:20.784 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:12:20.784 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 500 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:12:20.784 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:12:20.786 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (1 chunks metadata)
+2025-11-13 00:12:20.797 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 500 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:12:20.905 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 1300 -> 1148 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:20.905 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:12:20.907 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing test.dcz to test.decompressed.txt
+2025-11-13 00:12:20.907 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Input file size: 1148 bytes ({:.2f} GB)
+2025-11-13 00:12:20.920 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Reading compression header...
+2025-11-13 00:12:20.921 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing 1 chunks, original size: 1300 bytes ({:.2f} GB)
+2025-11-13 00:12:20.921 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 1/1: offset=0, compressedSize=500, originalSize=1300 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:20.923 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/1 decompressed: 1300 bytes (2ms, checksum OK)
+2025-11-13 00:12:20.924 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - All data synchronized to disk
+2025-11-13 00:12:21.027 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompression complete: 1300 bytes ({:.2f} GB) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:21.027 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - File integrity verified - decompressed 1300 bytes successfully
+2025-11-13 00:12:21.027 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Checksum validation passed for all 1 chunks
+2025-11-13 00:12:21.037 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing empty.txt (0 bytes, {:.2f} GB) into 0.0 chunks
+2025-11-13 00:12:21.039 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:12:21.040 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:12:21.040 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 0 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:12:21.040 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:12:21.040 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (0 chunks metadata)
+2025-11-13 00:12:21.041 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 0 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:12:21.152 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 0 -> 77 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:21.152 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:12:21.152 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing empty.dcz to empty.decompressed.txt
+2025-11-13 00:12:21.153 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Input file size: 77 bytes ({:.2f} GB)
+2025-11-13 00:12:21.161 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Reading compression header...
+2025-11-13 00:12:21.163 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing 0 chunks, original size: 0 bytes ({:.2f} GB)
+2025-11-13 00:12:21.163 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Empty file - no chunks to decompress
+2025-11-13 00:12:21.164 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompression complete: 0 bytes in {:.2f}s
+2025-11-13 00:12:21.181 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing large.bin (3145728 bytes, {:.2f} GB) into 0.0029296875 chunks
+2025-11-13 00:12:21.181 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:12:21.207 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/3 compressed: 1048576 -> 1048576 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:21.222 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 2/3 compressed: 1048576 -> 1048576 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:21.239 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 3/3 compressed: 1048576 -> 1048576 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:21.239 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:12:21.240 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 3145728 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:12:21.240 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:12:21.241 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (3 chunks metadata)
+2025-11-13 00:12:21.252 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 3145728 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:12:21.365 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 3145728 -> 3147521 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:21.365 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:12:21.366 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing large.dcz to large.decompressed.bin
+2025-11-13 00:12:21.366 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Input file size: 3147521 bytes ({:.2f} GB)
+2025-11-13 00:12:21.374 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Reading compression header...
+2025-11-13 00:12:21.376 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing 3 chunks, original size: 3145728 bytes ({:.2f} GB)
+2025-11-13 00:12:21.376 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 1/3: offset=0, compressedSize=1048576, originalSize=1048576 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:21.426 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/3 decompressed: 1048576 bytes (50ms, checksum OK)
+2025-11-13 00:12:21.427 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 2/3: offset=1048576, compressedSize=1048576, originalSize=1048576 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:21.466 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 2/3 decompressed: 1048576 bytes (39ms, checksum OK)
+2025-11-13 00:12:21.466 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 3/3: offset=2097152, compressedSize=1048576, originalSize=1048576 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:21.508 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 3/3 decompressed: 1048576 bytes (42ms, checksum OK)
+2025-11-13 00:12:21.511 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - All data synchronized to disk
+2025-11-13 00:12:21.613 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompression complete: 3145728 bytes ({:.2f} GB) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:21.613 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - File integrity verified - decompressed 3145728 bytes successfully
+2025-11-13 00:12:21.613 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Checksum validation passed for all 3 chunks
+2025-11-13 00:12:21.635 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing test.txt (29 bytes, {:.2f} GB) into 2.7008354663848877E-8 chunks
+2025-11-13 00:12:21.635 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:12:21.646 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/1 compressed: 29 -> 15 bytes (ratio: {:.2f}%, 51.724137931034484ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:12:21.646 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:12:21.646 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 15 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:12:21.646 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:12:21.647 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (1 chunks metadata)
+2025-11-13 00:12:21.658 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 15 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:12:21.766 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 29 -> 663 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:12:21.766 [Test worker] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:12:21.795 [Test worker] WARN  com.datacomp.service.gpu.GpuFrequencyService - Failed to initialize TornadoVM device: Could not initialize class uk.ac.manchester.tornado.api.runtime.TornadoRuntimeProvider
+2025-11-13 00:12:57.830 [JavaFX-Launcher] INFO  com.datacomp.ui.DataCompApp - Initializing DataComp application
+2025-11-13 00:12:58.051 [JavaFX Application Thread] INFO  com.datacomp.ui.MainViewController - Initializing main view controller
+2025-11-13 00:12:58.246 [JavaFX Application Thread] INFO  com.datacomp.ui.DataCompApp - Application started successfully
+2025-11-13 00:13:03.126 [JavaFX Application Thread] INFO  com.datacomp.ui.CompressController - CPU mode enabled by default for UI stability
+2025-11-13 00:13:21.890 [ServiceCache-Init] INFO  com.datacomp.service.ServiceCache - Starting GPU service initialization (this may take 5-10 seconds)...
+2025-11-13 00:13:21.946 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - Initializing Streaming GPU service (this may take 5-30 seconds first time)...
+2025-11-13 00:13:21.946 [ServiceCache-Init] INFO  com.datacomp.service.gpu.GpuFrequencyService - Selected GPU device: NVIDIA GeForce RTX 3050 Ti Laptop GPU CL_DEVICE_TYPE_GPU (available)
+2025-11-13 00:13:21.947 [ServiceCache-Init] INFO  com.datacomp.service.gpu.GpuFrequencyService - Performing GPU availability test (first time only)...
+2025-11-13 00:13:22.560 [ServiceCache-Init] INFO  com.datacomp.service.gpu.GpuFrequencyService - ✓ GPU availability test PASSED (611 ms)
+2025-11-13 00:13:22.560 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ╔═══════════════════════════════════════════════════════════╗
+2025-11-13 00:13:22.560 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║  STREAMING GPU COMPRESSION SERVICE INITIALIZED            ║
+2025-11-13 00:13:22.561 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ╠═══════════════════════════════════════════════════════════╣
+2025-11-13 00:13:22.561 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║  Mode: TRUE STREAMING (Constant Memory Usage)             ║
+2025-11-13 00:13:22.561 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║  Chunk Size: {:<48} ║
+2025-11-13 00:13:22.561 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║  Max Memory: ~576.00 MB                                     ║
+2025-11-13 00:13:22.561 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║  Init Time: 614 ms                                         ║
+2025-11-13 00:13:22.561 [ServiceCache-Init] INFO  c.d.service.gpu.StreamingGpuCompressionService - ╚═══════════════════════════════════════════════════════════╝
+2025-11-13 00:13:22.561 [ServiceCache-Init] INFO  com.datacomp.service.ServiceCache - ✓ GPU service initialized successfully in 670ms
+2025-11-13 00:13:22.562 [pool-2-thread-1] INFO  com.datacomp.ui.CompressController - Service initialized successfully: Streaming GPU Compression (Constant Memory)
+2025-11-13 00:13:22.564 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - 
+2025-11-13 00:13:22.564 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - ┌────────────────────────────────────────────────────────────┐
+2025-11-13 00:13:22.564 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - │  STREAMING GPU COMPRESSION                                  │
+2025-11-13 00:13:22.564 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - ├────────────────────────────────────────────────────────────┤
+2025-11-13 00:13:22.564 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - │  File: {:<51} │
+2025-11-13 00:13:22.565 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - │  Size: {:<51} │
+2025-11-13 00:13:22.565 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - │  Chunks: {:<48} │
+2025-11-13 00:13:22.565 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - │  Memory: Constant ~576.00 MB                              │
+2025-11-13 00:13:22.565 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - └────────────────────────────────────────────────────────────┘
+2025-11-13 00:13:22.565 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - 
+2025-11-13 00:13:23.008 [pool-2-thread-1] INFO  com.datacomp.util.GpuBufferManager - GPU Buffer Manager initialized
+2025-11-13 00:13:23.358 [pool-2-thread-1] WARN  c.d.service.gpu.StreamingGpuCompressionService - GPU compression failed for chunk, using CPU: Index 64 out of bounds for length 64
+2025-11-13 00:13:31.873 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - Chunk 1/7: 536870912 bytes → 536871168 bytes ({:.2f}%) | {:.1f}% complete | 100.00004842877388ms
+2025-11-13 00:13:32.276 [pool-2-thread-1] WARN  c.d.service.gpu.StreamingGpuCompressionService - GPU compression failed for chunk, using CPU: Index 64 out of bounds for length 64
+2025-11-13 00:13:40.714 [pool-2-thread-1] WARN  c.d.service.gpu.StreamingGpuCompressionService - GPU compression failed for chunk, using CPU: Index 64 out of bounds for length 64
+2025-11-13 00:13:48.807 [pool-2-thread-1] WARN  c.d.service.gpu.StreamingGpuCompressionService - GPU compression failed for chunk, using CPU: Index 64 out of bounds for length 64
+2025-11-13 00:13:57.509 [pool-2-thread-1] WARN  c.d.service.gpu.StreamingGpuCompressionService - GPU compression failed for chunk, using CPU: Index 64 out of bounds for length 64
+2025-11-13 00:14:05.844 [pool-2-thread-1] WARN  c.d.service.gpu.StreamingGpuCompressionService - GPU compression failed for chunk, using CPU: Index 64 out of bounds for length 64
+2025-11-13 00:14:14.199 [pool-2-thread-1] WARN  c.d.service.gpu.StreamingGpuCompressionService - GPU compression failed for chunk, using CPU: Index 64 out of bounds for length 64
+2025-11-13 00:14:20.669 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - Chunk 7/7: 460162806 bytes → 460163062 bytes ({:.2f}%) | {:.1f}% complete | 100.00004943787133ms
+2025-11-13 00:14:20.670 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - 
+2025-11-13 00:14:20.670 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - ╔════════════════════════════════════════════════════════════╗
+2025-11-13 00:14:20.670 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║         STREAMING GPU COMPRESSION COMPLETE                 ║
+2025-11-13 00:14:20.670 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - ╠════════════════════════════════════════════════════════════╣
+2025-11-13 00:14:20.670 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║  Original:  {:<48} ║
+2025-11-13 00:14:20.670 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║  Compressed:{:<48} ║
+2025-11-13 00:14:20.670 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║  Ratio:     {:<48} ║
+2025-11-13 00:14:20.671 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║  Time:      {:<48} ║
+2025-11-13 00:14:20.671 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - ║  Throughput:{:<48} ║
+2025-11-13 00:14:20.671 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - ╚════════════════════════════════════════════════════════════╝
+2025-11-13 00:14:20.671 [pool-2-thread-1] INFO  c.d.service.gpu.StreamingGpuCompressionService - 
+2025-11-13 00:14:20.671 [pool-2-thread-1] INFO  com.datacomp.util.GpuBufferManager - Clearing all buffer pools
+2025-11-13 00:14:28.665 [JavaFX Application Thread] INFO  com.datacomp.ui.CompressController - CPU mode enabled by default for UI stability
+2025-11-13 00:14:53.399 [pool-3-thread-1] INFO  com.datacomp.service.ServiceCache - CPU service cached
+2025-11-13 00:14:53.399 [pool-3-thread-1] INFO  com.datacomp.ui.CompressController - Service initialized successfully: CPU Compression
+2025-11-13 00:14:53.399 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing videoplayback.webm (3681388278 bytes, {:.2f} GB) into 3.428560009226203 chunks
+2025-11-13 00:14:53.410 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:15:03.099 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:15:11.305 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 2/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:15:19.199 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 3/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:15:27.803 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 4/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:15:36.117 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 5/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:15:44.826 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 6/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:15:52.005 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 7/7 compressed: 460162806 -> 460162806 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:15:52.005 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:15:52.006 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 3681388278 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:15:52.006 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:15:52.008 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (7 chunks metadata)
+2025-11-13 00:15:52.075 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:52.125 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:52.189 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:52.236 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:52.331 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:52.436 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:52.539 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:52.642 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:52.751 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:52.853 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:52.970 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:53.069 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:53.173 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:53.275 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:53.373 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:53.480 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:53.584 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:53.690 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:53.805 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:53.921 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:54.017 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:54.127 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:54.226 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:54.328 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:15:54.361 [pool-3-thread-1] ERROR com.datacomp.service.cpu.CpuCompressionService - Compression failed for file: D:\videoplayback.webm
+java.io.IOException: There is not enough space on the disk
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:75)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:300)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+	at java.base/java.io.BufferedOutputStream.implWrite(BufferedOutputStream.java:222)
+	at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:200)
+	at java.base/java.io.DataOutputStream.write(DataOutputStream.java:115)
+	at com.datacomp.service.cpu.CpuCompressionService.compressWithStages(CpuCompressionService.java:272)
+	at com.datacomp.ui.CompressController$2.call(CompressController.java:358)
+	at com.datacomp.ui.CompressController$2.call(CompressController.java:291)
+	at javafx.graphics@21.0.1/javafx.concurrent.Task$TaskCallable.call(Task.java:1399)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: java.io.IOException: There is not enough space on the disk
+		at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+		at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:75)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+		at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:300)
+		at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+		at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+		at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+		at java.base/java.io.BufferedOutputStream.implFlush(BufferedOutputStream.java:252)
+		at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:240)
+		at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:184)
+		at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:193)
+		at com.datacomp.service.cpu.CpuCompressionService.compressWithStages(CpuCompressionService.java:240)
+		... 9 common frames omitted
+		Suppressed: java.io.IOException: There is not enough space on the disk
+			at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+			at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:75)
+			at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+			at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+			at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+			at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:300)
+			at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+			at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+			at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+			at java.base/java.io.BufferedOutputStream.implFlush(BufferedOutputStream.java:252)
+			at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:240)
+			at java.base/java.io.DataOutputStream.flush(DataOutputStream.java:131)
+			at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:184)
+			... 10 common frames omitted
+2025-11-13 00:15:54.365 [pool-3-thread-1] ERROR com.datacomp.service.cpu.CpuCompressionService - File size: 3681388278 bytes ({:.2f} GB), Chunks: 3.428560009226203
+2025-11-13 00:15:54.365 [pool-3-thread-1] ERROR com.datacomp.service.cpu.CpuCompressionService - Temp file exists: true, Output exists: true
+2025-11-13 00:15:54.540 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Deleted incomplete output file (2541752314 bytes)
+2025-11-13 00:15:54.727 [JavaFX Application Thread] ERROR com.datacomp.ui.CompressController - Compression failed
+java.io.IOException: Compression failed: There is not enough space on the disk
+	at com.datacomp.service.cpu.CpuCompressionService.compressWithStages(CpuCompressionService.java:342)
+	at com.datacomp.ui.CompressController$2.call(CompressController.java:358)
+	at com.datacomp.ui.CompressController$2.call(CompressController.java:291)
+	at javafx.graphics@21.0.1/javafx.concurrent.Task$TaskCallable.call(Task.java:1399)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.io.IOException: There is not enough space on the disk
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:75)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:300)
+	at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+	at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+	at java.base/java.io.BufferedOutputStream.implWrite(BufferedOutputStream.java:222)
+	at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:200)
+	at java.base/java.io.DataOutputStream.write(DataOutputStream.java:115)
+	at com.datacomp.service.cpu.CpuCompressionService.compressWithStages(CpuCompressionService.java:272)
+	... 9 common frames omitted
+	Suppressed: java.io.IOException: There is not enough space on the disk
+		at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+		at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:75)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+		at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:300)
+		at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+		at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+		at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+		at java.base/java.io.BufferedOutputStream.implFlush(BufferedOutputStream.java:252)
+		at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:240)
+		at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:184)
+		at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:193)
+		at com.datacomp.service.cpu.CpuCompressionService.compressWithStages(CpuCompressionService.java:240)
+		... 9 common frames omitted
+		Suppressed: java.io.IOException: There is not enough space on the disk
+			at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+			at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:75)
+			at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137)
+			at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102)
+			at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:72)
+			at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:300)
+			at java.base/sun.nio.ch.ChannelOutputStream.writeFully(ChannelOutputStream.java:68)
+			at java.base/sun.nio.ch.ChannelOutputStream.write(ChannelOutputStream.java:105)
+			at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:125)
+			at java.base/java.io.BufferedOutputStream.implFlush(BufferedOutputStream.java:252)
+			at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:240)
+			at java.base/java.io.DataOutputStream.flush(DataOutputStream.java:131)
+			at java.base/java.io.FilterOutputStream.close(FilterOutputStream.java:184)
+			... 10 common frames omitted
+2025-11-13 00:16:35.581 [pool-3-thread-1] INFO  com.datacomp.ui.CompressController - Service initialized successfully: CPU Compression
+2025-11-13 00:16:35.581 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing videoplayback.webm (3681388278 bytes, {:.2f} GB) into 3.428560009226203 chunks
+2025-11-13 00:16:35.581 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:16:43.312 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:16:51.626 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 2/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:16:59.375 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 3/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:17:07.132 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 4/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:17:15.157 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 5/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:17:22.985 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 6/7 compressed: 536870912 -> 536870912 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:17:29.655 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 7/7 compressed: 460162806 -> 460162806 bytes (ratio: {:.2f}%, 100.0ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:17:29.655 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:17:29.656 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 3681388278 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:17:29.656 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:17:29.656 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (7 chunks metadata)
+2025-11-13 00:17:29.720 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:29.781 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:29.832 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:29.906 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:29.988 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:30.087 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:30.191 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:30.293 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:30.393 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:30.501 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:30.599 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:30.697 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:30.794 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:30.903 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:31.004 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:31.099 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:31.203 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:31.303 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:31.420 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:31.514 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:31.620 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:31.720 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:31.832 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:31.934 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:32.048 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:32.145 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:32.243 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:32.359 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:32.455 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:32.599 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:32.765 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:32.966 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:33.141 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:33.319 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:33.501 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:17:33.552 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 3681388278 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:17:33.657 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 3681388278 -> 3681392368 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:17:33.657 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:17:43.299 [pool-3-thread-1] INFO  com.datacomp.ui.CompressController - Service initialized successfully: CPU Compression
+2025-11-13 00:17:43.299 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing videoplayback.webm.dcz to videoplayback.webm
+2025-11-13 00:17:43.300 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Input file size: 3681392368 bytes ({:.2f} GB)
+2025-11-13 00:17:43.300 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Reading compression header...
+2025-11-13 00:17:43.305 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing 7 chunks, original size: 3681388278 bytes ({:.2f} GB)
+2025-11-13 00:17:43.305 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 1/7: offset=0, compressedSize=536870912, originalSize=536870912 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:18:05.601 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/7 decompressed: 536870912 bytes (22296ms, checksum OK)
+2025-11-13 00:18:05.603 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Progress: {:.2f} GB / {:.2f} GB ({:.1f}%) decompressed
+2025-11-13 00:18:05.603 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 2/7: offset=536870912, compressedSize=536870912, originalSize=536870912 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:18:27.904 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 2/7 decompressed: 536870912 bytes (22301ms, checksum OK)
+2025-11-13 00:18:27.904 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Progress: {:.2f} GB / {:.2f} GB ({:.1f}%) decompressed
+2025-11-13 00:18:27.904 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 3/7: offset=1073741824, compressedSize=536870912, originalSize=536870912 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:18:50.537 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 3/7 decompressed: 536870912 bytes (22633ms, checksum OK)
+2025-11-13 00:18:50.538 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Progress: {:.2f} GB / {:.2f} GB ({:.1f}%) decompressed
+2025-11-13 00:18:50.538 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 4/7: offset=1610612736, compressedSize=536870912, originalSize=536870912 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:19:14.767 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 4/7 decompressed: 536870912 bytes (24229ms, checksum OK)
+2025-11-13 00:19:14.768 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Progress: {:.2f} GB / {:.2f} GB ({:.1f}%) decompressed
+2025-11-13 00:19:14.768 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 5/7: offset=2147483648, compressedSize=536870912, originalSize=536870912 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:19:37.861 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 5/7 decompressed: 536870912 bytes (23093ms, checksum OK)
+2025-11-13 00:19:37.861 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Progress: {:.2f} GB / {:.2f} GB ({:.1f}%) decompressed
+2025-11-13 00:19:37.861 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 6/7: offset=2684354560, compressedSize=536870912, originalSize=536870912 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:20:00.092 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 6/7 decompressed: 536870912 bytes (22231ms, checksum OK)
+2025-11-13 00:20:00.092 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Progress: {:.2f} GB / {:.2f} GB ({:.1f}%) decompressed
+2025-11-13 00:20:00.092 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompressing chunk 7/7: offset=3221225472, compressedSize=460162806, originalSize=460162806 [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:20:18.993 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 7/7 decompressed: 460162806 bytes (18901ms, checksum OK)
+2025-11-13 00:20:18.993 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Progress: {:.2f} GB / {:.2f} GB ({:.1f}%) decompressed
+2025-11-13 00:20:19.002 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - All data synchronized to disk
+2025-11-13 00:20:19.103 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Decompression complete: 3681388278 bytes ({:.2f} GB) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:20:19.103 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - File integrity verified - decompressed 3681388278 bytes successfully
+2025-11-13 00:20:19.103 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Checksum validation passed for all 7 chunks
+2025-11-13 00:20:50.355 [pool-3-thread-1] INFO  com.datacomp.ui.CompressController - Service initialized successfully: CPU Compression
+2025-11-13 00:20:50.355 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing TornadoVM.tar (2412664832 bytes, {:.2f} GB) into 2.246969223022461 chunks
+2025-11-13 00:20:50.355 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:20:58.918 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/5 compressed: 536870912 -> 480461660 bytes (ratio: {:.2f}%, 89.49295803904533ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:21:07.752 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 2/5 compressed: 536870912 -> 478523240 bytes (ratio: {:.2f}%, 89.1318991780281ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:21:16.811 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 3/5 compressed: 536870912 -> 513745043 bytes (ratio: {:.2f}%, 95.69247122853994ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:21:25.111 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 4/5 compressed: 536870912 -> 469718658 bytes (ratio: {:.2f}%, 87.49191798269749ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:21:29.593 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 5/5 compressed: 265181184 -> 252443522 bytes (ratio: {:.2f}%, 95.19661922921348ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:21:29.594 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:21:29.594 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 2194892123 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:21:29.594 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:21:29.595 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (5 chunks metadata)
+2025-11-13 00:21:29.659 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:29.713 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:29.811 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:29.864 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:30.006 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:30.152 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:30.277 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:30.418 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:30.533 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:30.656 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:30.758 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:30.876 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:30.981 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:31.088 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:31.186 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:31.306 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:31.408 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:31.509 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:31.611 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:31.707 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:21:31.801 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 2194892123 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:21:31.902 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 2412664832 -> 2194895064 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:21:31.902 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:21:56.785 [pool-3-thread-1] INFO  com.datacomp.ui.CompressController - Service initialized successfully: CPU Compression
+2025-11-13 00:21:56.785 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Compressing TornadoVM.tar (2412664832 bytes, {:.2f} GB) into 2.246969223022461 chunks
+2025-11-13 00:21:56.785 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: Compressing chunks (memory-efficient streaming)...
+2025-11-13 00:22:05.390 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 1/5 compressed: 536870912 -> 480461660 bytes (ratio: {:.2f}%, 89.49295803904533ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:22:14.009 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 2/5 compressed: 536870912 -> 478523240 bytes (ratio: {:.2f}%, 89.1318991780281ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:22:22.968 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 3/5 compressed: 536870912 -> 513745043 bytes (ratio: {:.2f}%, 95.69247122853994ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:22:31.262 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 4/5 compressed: 536870912 -> 469718658 bytes (ratio: {:.2f}%, 87.49191798269749ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:22:35.631 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Chunk 5/5 compressed: 265181184 -> 252443522 bytes (ratio: {:.2f}%, 95.19661922921348ms) [{:.1f}% complete, {:.2f}/{:.2f} GB]
+2025-11-13 00:22:35.632 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1: All data flushed to temp file
+2025-11-13 00:22:35.632 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 1 complete: 2194892123 bytes ({:.2f} GB) compressed to temp file
+2025-11-13 00:22:35.632 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Phase 2: Assembling final compressed file...
+2025-11-13 00:22:35.632 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Header written (5 chunks metadata)
+2025-11-13 00:22:35.704 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:35.756 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:35.806 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:35.958 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:36.062 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:36.197 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:36.357 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:36.501 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:36.596 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:36.658 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:36.742 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:36.846 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:36.941 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:37.044 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:37.096 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:37.153 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:37.248 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:37.358 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:37.448 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:37.520 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied {:.2f} GB / {:.2f} GB ({:.1f}%)
+2025-11-13 00:22:37.601 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Copied 2194892123 bytes ({:.2f} GB) of compressed data to final file
+2025-11-13 00:22:37.702 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - Compression complete: 2412664832 -> 2194895064 bytes ({:.2f}%) in {:.2f}s ({:.2f} MB/s)
+2025-11-13 00:22:37.702 [pool-3-thread-1] INFO  com.datacomp.service.cpu.CpuCompressionService - SUCCESS: Final file size verified: {:.2f} GB
+2025-11-13 00:23:54.656 [JavaFX Application Thread] INFO  com.datacomp.ui.DataCompApp - Application stopping
+2025-11-13 00:23:54.656 [JavaFX Application Thread] INFO  com.datacomp.ui.DataCompApp - Service cache shutdown complete
