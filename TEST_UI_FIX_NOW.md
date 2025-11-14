@@ -227,3 +227,4 @@ Enjoy your professional, responsive compression application! 🚀
 
 **TIP**: The difference is most noticeable on the SECOND compression - it will start almost instantly because the service is cached!
 
+

@@ -355,3 +355,4 @@ If CPU mode with the checkbox CHECKED still has issues, that would be very unusu
 
 **The application is now fully functional and reliable!** 🚀
 
+

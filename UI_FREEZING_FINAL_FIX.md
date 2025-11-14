@@ -398,3 +398,4 @@ If you still experience UI freezing:
 
 **The UI freezing problem is now completely solved! 🚀**
 
+

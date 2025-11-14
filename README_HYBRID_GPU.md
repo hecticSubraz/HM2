@@ -306,3 +306,4 @@ All documentation is in this folder:
 
 **Ready to achieve 500-1000 MB/s? Enable GPU histogram now!** 🚀
 
+

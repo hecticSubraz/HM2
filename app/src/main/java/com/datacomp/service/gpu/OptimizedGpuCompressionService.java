@@ -550,26 +550,23 @@ public class OptimizedGpuCompressionService implements CompressionService {
             byte[] output = new byte[outputBytes];
             
             // GPU-accelerated parallel encoding with bit packing
-            try {
-                TaskGraph encodeGraph = new TaskGraph("encode-" + System.nanoTime())
-                    .transferToDevice(DataTransferMode.FIRST_EXECUTION, data, codeLengths, 
-                                     codewords, bitOffsets, output)
-                    .task("encode", TornadoKernels::parallelEncodingKernel, 
-                          data, 0, length, codeLengths, codewords, bitOffsets, output)
-                    .transferToHost(DataTransferMode.EVERY_EXECUTION, output);
-                
-                try (TornadoExecutionPlan plan = new TornadoExecutionPlan(encodeGraph.snapshot())) {
-                    plan.execute();
-                }
-            } catch (Exception e) {
-                logger.debug("GPU encoding failed, using CPU fallback: {}", e.getMessage());
-                return encodeChunkOnCpu(data, length, codes);
+            TaskGraph encodeGraph = new TaskGraph("encode-optimized-" + System.nanoTime())
+                .transferToDevice(DataTransferMode.FIRST_EXECUTION, data, codeLengths, 
+                                 codewords, bitOffsets, output)
+                .task("encode", TornadoKernels::parallelEncodingKernel, 
+                      data, 0, length, codeLengths, codewords, bitOffsets, output)
+                .transferToHost(DataTransferMode.EVERY_EXECUTION, output);
+            
+            try (TornadoExecutionPlan plan = new TornadoExecutionPlan(encodeGraph.snapshot())) {
+                plan.execute();
             }
             
+            logger.debug("GPU encoding successful: {} → {} bytes", length, outputBytes);
             return output;
             
         } catch (Exception e) {
-            logger.debug("GPU encoding setup failed, using CPU fallback: {}", e.getMessage());
+            // Only use CPU fallback if GPU truly fails
+            logger.warn("GPU encoding failed after all attempts, using CPU fallback: {}", e.getMessage());
             return encodeChunkOnCpu(data, length, codes);
         }
     }

@@ -42,7 +42,7 @@
     
     <!-- Settings -->
     <HBox spacing="15" alignment="CENTER_LEFT">
-        <CheckBox fx:id="useCpuCheckBox" text="Force CPU mode (recommended for stability)" selected="true"/>
+        <CheckBox fx:id="useCpuCheckBox" text="Force CPU mode (disable GPU acceleration)" selected="false"/>
     </HBox>
     
     <!-- Action Buttons -->

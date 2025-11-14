@@ -187,3 +187,4 @@ If you still experience UI freezing or compression not completing **with the CPU
 
 *This test takes 30-60 seconds total and will confirm the fix is working.*
 
+

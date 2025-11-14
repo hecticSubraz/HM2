@@ -108,10 +108,10 @@ public class CompressController implements MainViewController.ConfigurableContro
             setupBenchmarkTable();
         }
         
-        // Set CPU mode as default for stability
+        // GPU mode is now default for maximum performance
         if (useCpuCheckBox != null) {
-            useCpuCheckBox.setSelected(true);
-            logger.info("CPU mode enabled by default for UI stability");
+            useCpuCheckBox.setSelected(false);
+            logger.info("GPU acceleration enabled by default for maximum performance");
         }
     }
     
